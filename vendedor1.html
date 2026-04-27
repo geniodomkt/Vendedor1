@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Seu negócio não aparece no Google? A gente resolve isso. Site profissional com SEO, GEO e resultado real. Sem enrolação.">
+<title>Seu negócio some no Google? A gente resolve. | Gênio do MKT</title>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Gênio do MKT",
+  "description":"Criação de sites profissionais com SEO e GEO para pequenas empresas, MEIs e autônomos no Brasil.",
+  "serviceType":"Criação de Sites",
+  "areaServed":"Brasil",
+  "faqPage":{
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Por que minha empresa precisa de um site?","acceptedAnswer":{"@type":"Answer","text":"97% dos consumidores pesquisam online antes de comprar. Sem site, sua empresa é invisível."}},
+      {"@type":"Question","name":"O que é GEO?","acceptedAnswer":{"@type":"Answer","text":"GEO otimiza seu site para aparecer nas respostas de IAs como ChatGPT e Gemini, onde 800 milhões de pessoas buscam semanalmente."}},
+      {"@type":"Question","name":"Quanto tempo leva?","acceptedAnswer":{"@type":"Answer","text":"Seu site fica no ar em poucos dias, já com SEO, SSL e WhatsApp integrado."}}
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --cream:#f0e8d5;
+  --cream-dark:#e8dcc4;
+  --red:#8b1a1a;
+  --red-mid:#a52020;
+  --red-light:#c0392b;
+  --black:#1a0a0a;
+  --warm-gray:#6b5a4e;
+  --font-display:'Bebas Neue',sans-serif;
+  --font-serif:'Instrument Serif',serif;
+  --font-body:'DM Sans',sans-serif;
+}
+
+html{scroll-behavior:smooth;}
+body{
+  background:var(--cream);
+  color:var(--black);
+  font-family:var(--font-body);
+  overflow-x:hidden;
+  cursor:default;
+}
+
+/* grain overlay */
+body::before{
+  content:'';
+  position:fixed;inset:0;z-index:1000;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  opacity:.4;
+}
+
+/* ── TICKER ── */
+.ticker-wrap{
+  background:var(--red);
+  padding:.55rem 0;overflow:hidden;
+  position:sticky;top:0;z-index:100;
+  border-bottom:3px solid var(--black);
+}
+.ticker-inner{display:flex;gap:3rem;animation:tick 28s linear infinite;width:max-content;}
+.ticker-inner span{
+  font-family:var(--font-display);
+  font-size:.95rem;letter-spacing:.12em;
+  color:var(--cream);white-space:nowrap;
+}
+.ticker-inner .sep{color:rgba(240,232,213,.35);}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── NAV ── */
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.2rem 5vw;
+  background:var(--cream);
+  border-bottom:2px solid var(--black);
+  position:sticky;top:34px;z-index:90;
+}
+.nav-logo{
+  font-family:var(--font-display);
+  font-size:1.6rem;letter-spacing:.06em;
+  color:var(--red);line-height:1;
+}
+.nav-links{display:flex;align-items:center;gap:2rem;}
+.nav-links a{
+  font-size:.8rem;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--black);
+  text-decoration:none;transition:color .15s;
+}
+.nav-links a:hover{color:var(--red);}
+.nav-cta{
+  background:var(--black);color:var(--cream)!important;
+  padding:.45rem 1.2rem;border-radius:0;
+  font-size:.78rem!important;font-weight:600!important;
+  letter-spacing:.1em!important;
+  transition:background .15s!important;
+}
+.nav-cta:hover{background:var(--red)!important;color:var(--cream)!important;}
+
+/* ── HERO ── */
+.hero{
+  min-height:92vh;
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:3px solid var(--black);
+  overflow:hidden;
+}
+.hero-left{
+  padding:4rem 5vw 4rem 5vw;
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+  border-right:2px solid var(--black);
+  background:var(--cream);
+  position:relative;overflow:hidden;
+}
+.hero-left::after{
+  content:'97%';
+  position:absolute;bottom:-2rem;right:-1rem;
+  font-family:var(--font-display);font-size:18rem;
+  color:rgba(139,26,26,.06);line-height:1;
+  pointer-events:none;letter-spacing:-.02em;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  background:var(--red);color:var(--cream);
+  font-size:.72rem;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;padding:.38rem 1rem;
+  width:fit-content;margin-bottom:2rem;
+}
+.hero-eyebrow span{width:6px;height:6px;border-radius:50%;background:var(--cream);animation:pd 1.6s ease-in-out infinite;}
+@keyframes pd{0%,100%{opacity:1}50%{opacity:.2}}
+
+.hero-h1{
+  font-family:var(--font-display);
+  font-size:clamp(4rem,8vw,8rem);
+  line-height:.9;letter-spacing:.01em;
+  color:var(--black);margin-bottom:1.5rem;
+  animation:fade-up .9s ease .2s both;
+}
+.hero-h1 .outline{
+  -webkit-text-stroke:2px var(--black);
+  color:transparent;display:block;
+}
+.hero-h1 .red{color:var(--red);display:block;}
+
+.hero-sub{
+  font-size:1.05rem;color:var(--warm-gray);line-height:1.72;
+  font-weight:300;max-width:420px;margin-bottom:2.5rem;
+  animation:fade-up .9s ease .4s both;
+}
+.hero-sub strong{color:var(--black);font-weight:500;}
+
+.hero-actions{
+  display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+  animation:fade-up .8s ease .6s both;
+}
+.btn-main{
+  display:inline-flex;align-items:center;gap:.75rem;
+  background:var(--red);color:var(--cream);
+  font-family:var(--font-display);font-size:1.1rem;
+  letter-spacing:.08em;padding:.8rem 2rem;
+  text-decoration:none;
+  border:2px solid var(--red);
+  transition:background .15s,color .15s,transform .12s;
+}
+.btn-main:hover{background:var(--black);border-color:var(--black);transform:translate(-2px,-2px);}
+.btn-main:active{transform:translate(0,0);}
+.btn-main svg{width:18px;height:18px;}
+.btn-sec{
+  font-family:var(--font-body);font-size:.8rem;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--warm-gray);text-decoration:underline;
+  text-underline-offset:4px;
+}
+.hero-trust{
+  margin-top:3rem;
+  font-size:.72rem;color:var(--warm-gray);letter-spacing:.06em;
+  text-transform:uppercase;
+  animation:fade-up .8s ease .7s both;
+}
+
+@keyframes fade-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+/* hero right — big image area */
+.hero-right{
+  background:var(--red);
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+}
+.hero-img-block{
+  flex:1;position:relative;
+  background:var(--red);
+  display:flex;align-items:center;justify-content:center;
+  padding:3rem 2rem;
+}
+.hero-big-stat{
+  font-family:var(--font-display);
+  font-size:clamp(7rem,15vw,14rem);
+  color:var(--cream);line-height:.88;
+  letter-spacing:-.02em;text-align:center;
+  opacity:.92;
+}
+.hero-big-stat span{
+  display:block;font-size:1.6rem;letter-spacing:.2em;
+  color:rgba(240,232,213,.55);margin-top:.5rem;font-family:var(--font-body);font-weight:300;
+}
+.hero-stat-cards{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-top:2px solid rgba(240,232,213,.2);
+}
+.hsc{
+  padding:1.5rem;
+  border-right:1px solid rgba(240,232,213,.15);
+}
+.hsc:last-child{border-right:none;}
+.hsc-num{
+  font-family:var(--font-display);font-size:2.2rem;
+  color:var(--cream);line-height:1;letter-spacing:.02em;
+}
+.hsc-label{font-size:.72rem;color:rgba(240,232,213,.55);margin-top:.3rem;line-height:1.4;}
+
+/* ── MARQUEE SECTION ── */
+.marquee-section{
+  background:var(--black);
+  padding:.8rem 0;overflow:hidden;
+  border-top:none;border-bottom:3px solid var(--red);
+}
+.marquee-inner{display:flex;gap:4rem;animation:tick 20s linear infinite;width:max-content;}
+.marquee-inner span{
+  font-family:var(--font-display);font-size:1.3rem;
+  letter-spacing:.12em;color:var(--cream);white-space:nowrap;opacity:.8;
+}
+.marquee-inner .dot{color:var(--red);opacity:1;}
+
+/* ── PAIN SECTION ── */
+.pain-section{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:3px solid var(--black);
+}
+.pain-left{
+  background:var(--red);
+  padding:5rem 5vw;
+  border-right:3px solid var(--black);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.pain-left h2{
+  font-family:var(--font-display);
+  font-size:clamp(2.8rem,5vw,5rem);
+  color:var(--cream);line-height:.95;
+  letter-spacing:.01em;margin-bottom:2rem;
+}
+.pain-left h2 em{
+  font-family:var(--font-serif);font-style:italic;
+  color:rgba(240,232,213,.65);
+  -webkit-text-stroke:0;
+}
+.pain-left p{
+  font-size:.95rem;color:rgba(240,232,213,.7);
+  line-height:1.75;font-weight:300;max-width:380px;
+}
+.pain-right{
+  background:var(--cream-dark);
+  padding:4rem 4vw;
+  display:flex;flex-direction:column;gap:0;
+}
+.pain-item{
+  padding:1.8rem 0;
+  border-bottom:1px solid rgba(26,10,10,.12);
+  display:flex;gap:1.2rem;align-items:flex-start;
+  transition:background .15s;
+}
+.pain-item:first-child{padding-top:0;}
+.pain-item:last-child{border-bottom:none;}
+.pain-num{
+  font-family:var(--font-display);font-size:2.5rem;
+  color:rgba(139,26,26,.18);line-height:1;flex-shrink:0;
+  letter-spacing:-.02em;
+}
+.pain-item h3{font-size:.95rem;font-weight:600;margin-bottom:.4rem;color:var(--black);}
+.pain-item p{font-size:.84rem;color:var(--warm-gray);line-height:1.65;font-weight:300;}
+.pain-tag{
+  display:inline-block;margin-top:.6rem;
+  font-size:.68rem;font-weight:600;letter-spacing:.08em;
+  background:var(--red);color:var(--cream);
+  padding:.22rem .7rem;
+}
+
+/* ── STATS STRIP ── */
+.stats-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-bottom:3px solid var(--black);
+}
+.stat-box{
+  padding:3rem 2rem;
+  border-right:2px solid var(--black);
+  text-align:center;
+  background:var(--cream);
+  transition:background .2s;
+  position:relative;overflow:hidden;
+}
+.stat-box:last-child{border-right:none;}
+.stat-box:hover{background:var(--red);}
+.stat-box:hover .sn{color:var(--cream);}
+.stat-box:hover .sl{color:rgba(240,232,213,.7);}
+.stat-box:hover .ss{color:rgba(240,232,213,.4);}
+.sn{
+  font-family:var(--font-display);
+  font-size:clamp(2.5rem,4vw,4rem);
+  color:var(--red);line-height:1;
+  letter-spacing:-.02em;
+  transition:color .2s;
+}
+.sl{font-size:.8rem;color:var(--warm-gray);line-height:1.45;margin-top:.4rem;transition:color .2s;}
+.ss{font-size:.65rem;color:rgba(107,90,78,.5);margin-top:.4rem;display:block;transition:color .2s;}
+
+/* ── REALITY SECTION ── */
+.reality-section{
+  padding:6rem 5vw;
+  background:var(--black);
+  position:relative;overflow:hidden;
+  border-bottom:3px solid var(--red);
+}
+.reality-bg-text{
+  position:absolute;font-family:var(--font-display);
+  font-size:22vw;color:rgba(240,232,213,.03);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  white-space:nowrap;pointer-events:none;letter-spacing:-.02em;
+}
+.reality-inner{position:relative;z-index:1;}
+.reality-label{
+  font-size:.7rem;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--red);margin-bottom:1.5rem;display:block;
+}
+.reality-cols{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;}
+.reality-quote{
+  font-family:var(--font-serif);
+  font-size:clamp(1.5rem,2.5vw,2.2rem);
+  line-height:1.4;color:var(--cream);
+  font-style:italic;font-weight:400;
+}
+.reality-quote em{color:var(--red);font-style:normal;}
+.reality-divider{width:40px;height:2px;background:var(--red);margin:2rem 0;}
+.reality-note{font-size:.9rem;color:rgba(240,232,213,.5);line-height:1.72;font-weight:300;}
+.data-rows{display:flex;flex-direction:column;gap:1rem;}
+.dr{
+  display:flex;align-items:center;gap:1.5rem;
+  padding:1.2rem 1.5rem;
+  border:1px solid rgba(240,232,213,.07);
+  transition:border-color .2s,background .2s;
+}
+.dr:hover{border-color:var(--red);background:rgba(139,26,26,.08);}
+.dr-pct{
+  font-family:var(--font-display);font-size:2.2rem;
+  color:var(--cream);line-height:1;flex-shrink:0;min-width:72px;
+  letter-spacing:-.02em;
+}
+.dr-text{font-size:.84rem;color:rgba(240,232,213,.6);line-height:1.5;font-weight:300;}
+.dr-text strong{color:var(--cream);font-weight:500;}
+
+/* ── WHO SECTION ── */
+.who-section{padding:6rem 5vw;border-bottom:3px solid var(--black);}
+.who-header{
+  display:grid;grid-template-columns:1fr 1fr;gap:3rem;
+  align-items:end;margin-bottom:3.5rem;
+}
+.who-title{
+  font-family:var(--font-display);
+  font-size:clamp(3rem,5.5vw,5.5rem);
+  line-height:.9;letter-spacing:.01em;
+  color:var(--black);
+}
+.who-title .ghost{-webkit-text-stroke:2px var(--black);color:transparent;}
+.who-title .fill{color:var(--red);}
+.who-sub{font-size:.92rem;color:var(--warm-gray);line-height:1.72;font-weight:300;max-width:380px;align-self:end;}
+.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--black);}
+.wc{
+  padding:2rem 1.5rem;
+  border-right:1px solid var(--black);
+  position:relative;overflow:hidden;
+  transition:background .2s;
+}
+.wc:last-child{border-right:none;}
+.wc:hover{background:var(--red);}
+.wc:hover .wc-icon{filter:grayscale(1) brightness(10);}
+.wc:hover h3,.wc:hover p{color:var(--cream);}
+.wc:hover .wc-tag{background:var(--cream);color:var(--red);}
+.wc::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:var(--red);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s;
+}
+.wc:hover::before{transform:scaleX(1);}
+.wc-icon{font-size:1.8rem;margin-bottom:1rem;transition:filter .2s;}
+.wc h3{font-size:.93rem;font-weight:600;margin-bottom:.5rem;transition:color .2s;}
+.wc p{font-size:.8rem;color:var(--warm-gray);line-height:1.6;font-weight:300;transition:color .2s;}
+.wc-tag{
+  display:inline-block;margin-top:1rem;
+  font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--black);color:var(--cream);
+  padding:.22rem .7rem;transition:background .2s,color .2s;
+}
+
+/* ── GEO SECTION ── */
+.geo-section{
+  background:var(--red);
+  padding:6rem 5vw;
+  border-bottom:3px solid var(--black);
+  position:relative;overflow:hidden;
+}
+.geo-section::before{
+  content:'GEO';
+  position:absolute;right:-2rem;top:50%;transform:translateY(-50%);
+  font-family:var(--font-display);font-size:25vw;
+  color:rgba(26,10,10,.07);pointer-events:none;line-height:1;
+}
+.geo-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;position:relative;z-index:1;}
+.geo-tag{
+  display:inline-block;background:var(--cream);color:var(--red);
+  font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  padding:.38rem .9rem;margin-bottom:1.5rem;
+}
+.geo-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.5rem,4vw,4.5rem);
+  line-height:.95;color:var(--cream);
+  letter-spacing:.01em;margin-bottom:1.5rem;
+}
+.geo-body{font-size:.95rem;color:rgba(240,232,213,.72);line-height:1.75;font-weight:300;}
+.geo-body strong{color:var(--cream);font-weight:500;}
+.geo-cards{display:flex;flex-direction:column;gap:1rem;}
+.gc{
+  padding:1.3rem 1.5rem;
+  background:rgba(26,10,10,.15);
+  border-left:3px solid var(--cream);
+  transition:background .2s,border-color .2s;
+}
+.gc:hover{background:rgba(26,10,10,.28);border-color:rgba(240,232,213,.5);}
+.gc h4{font-size:.9rem;font-weight:600;color:var(--cream);margin-bottom:.3rem;}
+.gc p{font-size:.78rem;color:rgba(240,232,213,.6);line-height:1.5;font-weight:300;}
+
+/* ── DELIVERABLES ── */
+.deliver-section{padding:6rem 5vw;border-bottom:3px solid var(--black);}
+.deliver-header{margin-bottom:3rem;}
+.deliver-label{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:1rem;display:block;}
+.deliver-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.5rem,5vw,5rem);
+  line-height:.92;letter-spacing:.01em;color:var(--black);
+}
+.deliver-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--black);}
+.di{
+  padding:2rem;border-bottom:1px solid var(--black);border-right:1px solid var(--black);
+  display:flex;gap:1.2rem;align-items:flex-start;
+  transition:background .18s;position:relative;overflow:hidden;
+}
+.di:nth-child(even){border-right:none;}
+.di:nth-last-child(-n+2){border-bottom:none;}
+.di:hover{background:var(--cream-dark);}
+.di-num{
+  font-family:var(--font-display);font-size:2.2rem;
+  color:rgba(139,26,26,.15);line-height:1;flex-shrink:0;
+}
+.di h3{font-size:.93rem;font-weight:600;margin-bottom:.4rem;}
+.di p{font-size:.82rem;color:var(--warm-gray);line-height:1.6;font-weight:300;}
+
+/* ── URGENCY ── */
+.urgency-section{
+  background:var(--black);
+  padding:6rem 5vw;
+  text-align:center;
+  border-bottom:3px solid var(--red);
+  position:relative;overflow:hidden;
+}
+.urgency-section::before{
+  content:'!';
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  font-family:var(--font-display);font-size:40vw;
+  color:rgba(139,26,26,.04);pointer-events:none;line-height:1;
+}
+.urgency-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+.urgency-badge{
+  display:inline-flex;align-items:center;gap:.6rem;
+  background:var(--red);color:var(--cream);
+  font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  padding:.38rem 1rem;margin-bottom:2.5rem;
+}
+.urgency-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.8rem,6vw,6rem);
+  line-height:.92;color:var(--cream);
+  margin-bottom:1.5rem;letter-spacing:.01em;
+}
+.urgency-title .red{color:var(--red);}
+.urgency-body{
+  font-size:1rem;color:rgba(240,232,213,.6);
+  line-height:1.8;margin-bottom:2rem;font-weight:300;
+}
+.urgency-body strong{color:var(--cream);font-weight:500;}
+.urgency-alert{
+  background:rgba(139,26,26,.15);
+  border:1px solid rgba(139,26,26,.4);
+  padding:1.5rem 2rem;margin-bottom:2.5rem;text-align:left;
+}
+.urgency-alert p{font-size:.88rem;color:rgba(240,232,213,.65);line-height:1.72;font-weight:300;}
+.urgency-alert strong{color:rgba(255,140,140,.9);font-weight:500;}
+
+/* ── FAQ ── */
+.faq-section{padding:6rem 5vw;background:var(--cream-dark);border-bottom:3px solid var(--black);}
+.faq-label{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:1rem;display:block;}
+.faq-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.5rem,4.5vw,4.5rem);
+  line-height:.95;color:var(--black);margin-bottom:3rem;letter-spacing:.01em;
+}
+.faq-list{max-width:680px;}
+.faq-item{border-bottom:1px solid rgba(26,10,10,.15);padding:1.4rem 0;cursor:pointer;}
+.faq-q{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:.95rem;font-weight:500;color:var(--black);gap:1rem;
+}
+.faq-q .tog{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--black);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;flex-shrink:0;
+  transition:background .2s,transform .22s;
+}
+.faq-a{font-size:.88rem;color:var(--warm-gray);line-height:1.72;max-height:0;overflow:hidden;font-weight:300;transition:max-height .3s ease,padding .3s;}
+.faq-item.open .faq-a{max-height:220px;padding-top:.75rem;}
+.faq-item.open .tog{background:var(--red);transform:rotate(45deg);}
+
+/* ── FINAL CTA ── */
+.cta-section{
+  background:var(--red);
+  padding:8rem 5vw;
+  text-align:center;
+  border-bottom:3px solid var(--black);
+  position:relative;overflow:hidden;
+}
+.cta-section::before{
+  content:'HOJE';
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  font-family:var(--font-display);font-size:35vw;
+  color:rgba(26,10,10,.06);pointer-events:none;line-height:1;white-space:nowrap;
+}
+.cta-inner{position:relative;z-index:1;}
+.cta-title{
+  font-family:var(--font-display);
+  font-size:clamp(3.5rem,8vw,8rem);
+  line-height:.9;color:var(--cream);
+  margin-bottom:1.5rem;letter-spacing:.01em;
+}
+.cta-title em{
+  font-family:var(--font-serif);font-style:italic;
+  color:rgba(240,232,213,.55);
+}
+.cta-sub{
+  font-size:1.05rem;color:rgba(240,232,213,.7);
+  margin-bottom:3rem;line-height:1.72;font-weight:300;
+}
+.cta-sub strong{color:var(--cream);font-weight:500;}
+.cta-note{font-size:.73rem;color:rgba(240,232,213,.4);margin-top:1.2rem;letter-spacing:.06em;text-transform:uppercase;}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--black);padding:2.5rem 5vw;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:1rem;
+  border-top:3px solid var(--red);
+}
+.footer-logo{
+  font-family:var(--font-display);font-size:1.3rem;
+  letter-spacing:.06em;color:var(--red);
+}
+footer p{font-size:.72rem;color:rgba(240,232,213,.3);letter-spacing:.04em;}
+
+/* ── FLOATING WA ── */
+.wa-float{
+  position:fixed;bottom:2rem;right:2rem;z-index:500;
+  background:#25D366;color:#fff;
+  width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);
+  transition:transform .2s,box-shadow .2s;
+  animation:bounce-in .7s cubic-bezier(.34,1.56,.64,1) 1.2s both;
+}
+.wa-float:hover{transform:scale(1.12);box-shadow:0 6px 30px rgba(37,211,102,.55);}
+.wa-float svg{width:26px;height:26px;}
+@keyframes bounce-in{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* ── MOBILE CTA ── */
+.mob-cta{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:200;
+  padding:.85rem 1.25rem 1.2rem;
+  background:linear-gradient(to top,var(--cream) 0%,rgba(240,232,213,.95) 100%);
+  border-top:2px solid var(--black);
+}
+@media(max-width:1023px){.mob-cta{display:flex;gap:1rem;align-items:center;}}
+.mob-cta-text strong{font-size:.88rem;color:var(--black);display:block;font-weight:600;}
+.mob-cta-text p{font-size:.72rem;color:var(--warm-gray);}
+.mob-cta-btn{
+  flex-shrink:0;
+  display:flex;align-items:center;gap:.5rem;
+  background:var(--red);color:var(--cream);
+  font-family:var(--font-display);font-size:.95rem;letter-spacing:.06em;
+  padding:.6rem 1.4rem;text-decoration:none;
+  transition:background .15s;
+}
+.mob-cta-btn:hover{background:var(--black);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero,.pain-section,.reality-cols,.geo-inner{grid-template-columns:1fr;}
+  .hero-left{border-right:none;border-bottom:2px solid var(--black);}
+  .pain-left{border-right:none;border-bottom:2px solid var(--black);}
+  .geo-section::before{display:none;}
+  .stats-strip{grid-template-columns:1fr 1fr;}
+  .stat-box{border-bottom:1px solid var(--black);}
+  .who-grid,.audience-grid{grid-template-columns:1fr 1fr;}
+  .who-header{grid-template-columns:1fr;}
+  .deliver-grid{grid-template-columns:1fr;}
+  .di{border-right:none;}
+  .di:nth-last-child(-n+2){border-bottom:1px solid var(--black);}
+  .di:last-child{border-bottom:none;}
+  nav{top:30px;}
+  .nav-links a:not(.nav-cta){display:none;}
+  .hero-right{min-height:50vw;}
+}
+@media(max-width:600px){
+  .stats-strip{grid-template-columns:1fr;}
+  .who-grid{grid-template-columns:1fr;}
+}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}
+</style>
+</head>
+<body>
+
+<!-- TICKER TOP -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span>97% pesquisam online antes de comprar</span><span class="sep"> ✦ </span>
+    <span>Sem site você não existe pra eles</span><span class="sep"> ✦ </span>
+    <span>SEO + GEO = Google + ChatGPT</span><span class="sep"> ✦ </span>
+    <span>Entrega rápida · Resultado real</span><span class="sep"> ✦ </span>
+    <span>97% pesquisam online antes de comprar</span><span class="sep"> ✦ </span>
+    <span>Sem site você não existe pra eles</span><span class="sep"> ✦ </span>
+    <span>SEO + GEO = Google + ChatGPT</span><span class="sep"> ✦ </span>
+    <span>Entrega rápida · Resultado real</span><span class="sep"> ✦ </span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">GÊNIO DO MKT</div>
+  <div class="nav-links">
+    <a href="#dor">O problema</a>
+    <a href="#geo">SEO & GEO</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://wa.me/5531918535222?text=Oi!%20Vi%20a%20página%20do%20Gênio%20do%20MKT%20e%20quero%20saber%20mais%20sobre%20o%20site%20profissional." class="nav-cta" target="_blank" rel="noopener">Falar agora →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div>
+      <div class="hero-eyebrow"><span></span> Alerta real de mercado</div>
+      <h1 class="hero-h1">
+        <span class="outline">Seu negócio</span>
+        <span class="outline">some no</span>
+        <span class="red">Google?</span>
+      </h1>
+      <p class="hero-sub">
+        <strong>97% dos seus clientes pesquisam online antes de comprar.</strong> Se você não aparece — no Google ou no ChatGPT — você basicamente não existe pra eles. Simples assim.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5531918535222?text=Oi!%20Vi%20a%20página%20e%20quero%20tirar%20meu%20negócio%20da%20invisibilidade." class="btn-main" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Resolver isso agora
+        </a>
+        <span class="btn-sec">sem enrolação, sem contrato longo</span>
+      </div>
+    </div>
+    <p class="hero-trust">Sem contrato longo · Entrega rápida · Resultado real</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-block">
+      <div class="hero-big-stat">
+        97%
+        <span>dos clientes pesquisam antes de comprar</span>
+      </div>
+    </div>
+    <div class="hero-stat-cards">
+      <div class="hsc">
+        <div class="hsc-num">$22</div>
+        <div class="hsc-label">de retorno por cada $1 em SEO</div>
+      </div>
+      <div class="hsc">
+        <div class="hsc-num">+527%</div>
+        <div class="hsc-label">tráfego via IA em 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-inner">
+    <span>APAREÇA NO GOOGLE</span><span class="dot"> ✦ </span>
+    <span>APAREÇA NO CHATGPT</span><span class="dot"> ✦ </span>
+    <span>SITE QUE VENDE DE VERDADE</span><span class="dot"> ✦ </span>
+    <span>SEO DESDE O DIA 1</span><span class="dot"> ✦ </span>
+    <span>GEO — IA READY</span><span class="dot"> ✦ </span>
+    <span>MOBILE FIRST</span><span class="dot"> ✦ </span>
+    <span>APAREÇA NO GOOGLE</span><span class="dot"> ✦ </span>
+    <span>APAREÇA NO CHATGPT</span><span class="dot"> ✦ </span>
+    <span>SITE QUE VENDE DE VERDADE</span><span class="dot"> ✦ </span>
+    <span>SEO DESDE O DIA 1</span><span class="dot"> ✦ </span>
+    <span>GEO — IA READY</span><span class="dot"> ✦ </span>
+    <span>MOBILE FIRST</span><span class="dot"> ✦ </span>
+  </div>
+</div>
+
+<!-- DOR -->
+<section class="pain-section" id="dor">
+  <div class="pain-left">
+    <h2>O problema<br>que ninguém<br><em>te conta.</em></h2>
+    <p>Não ter site hoje não é só falta de presença. É hemorragia de cliente. Cada dia sem aparecer no Google é um dia entregando seu público pro concorrente.</p>
+  </div>
+  <div class="pain-right">
+    <div class="pain-item reveal">
+      <div class="pain-num">01</div>
+      <div>
+        <h3>Você é literalmente invisível no Google</h3>
+        <p>Quando alguém digita "melhor [seu serviço] perto de mim", você não aparece. O cliente vai pra quem aparece primeiro — não pra quem é melhor.</p>
+        <span class="pain-tag">75% nunca passa da 1ª página</span>
+      </div>
+    </div>
+    <div class="pain-item reveal rd1">
+      <div class="pain-num">02</div>
+      <div>
+        <h3>ChatGPT não sabe que você existe</h3>
+        <p>800 milhões de pessoas usam ChatGPT toda semana. Sem site estruturado, a IA simplesmente não te recomenda. Você some antes mesmo de aparecer.</p>
+        <span class="pain-tag">+527% tráfego via IA em 2025</span>
+      </div>
+    </div>
+    <div class="pain-item reveal rd2">
+      <div class="pain-num">03</div>
+      <div>
+        <h3>Instagram é terreno alugado</h3>
+        <p>Algoritmo muda, conta cai, alcance vai a zero. Você tá construindo sua empresa num imóvel que não é seu. Site é seu — ponto.</p>
+        <span class="pain-tag">Perfil suspenso = empresa inexistente</span>
+      </div>
+    </div>
+    <div class="pain-item reveal rd3">
+      <div class="pain-num">04</div>
+      <div>
+        <h3>Sem site = sem credibilidade</h3>
+        <p>O cliente pesquisa seu nome, não acha nada oficial e a primeira dúvida é "isso é sério?". A segunda é ir pro concorrente.</p>
+        <span class="pain-tag">73% pesquisam reputação antes de comprar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-box reveal">
+    <div class="sn">97%</div>
+    <div class="sl">pesquisam online antes de comprar em loja física</div>
+    <span class="ss">CNDL / SPC Brasil</span>
+  </div>
+  <div class="stat-box reveal rd1">
+    <div class="sn">93%</div>
+    <div class="sl">pesquisam online antes de qualquer decisão de compra</div>
+    <span class="ss">Hedgehog Digital / Opinion Box</span>
+  </div>
+  <div class="stat-box reveal rd2">
+    <div class="sn">30%</div>
+    <div class="sl">a mais de faturamento com presença digital ativa</div>
+    <span class="ss">Google / Deloitte</span>
+  </div>
+  <div class="stat-box reveal rd3">
+    <div class="sn">$22</div>
+    <div class="sl">de retorno para cada $1 investido em SEO</div>
+    <span class="ss">BrightEdge Research</span>
+  </div>
+</div>
+
+<!-- REALITY -->
+<section class="reality-section">
+  <div class="reality-bg-text" aria-hidden="true">INVISÍVEL</div>
+  <div class="reality-inner">
+    <span class="reality-label reveal">A real do mercado hoje</span>
+    <div class="reality-cols">
+      <div>
+        <blockquote class="reality-quote reveal">
+          "Pode ter o melhor serviço do bairro. Se o cliente não te <em>acha</em>, você não existe pra ele."
+        </blockquote>
+        <div class="reality-divider"></div>
+        <p class="reality-note reveal rd1">
+          A jornada de compra começa no Google — e agora no ChatGPT. Seu negócio precisa estar onde o cliente tá procurando, não onde você acha mais fácil.
+        </p>
+      </div>
+      <div class="data-rows">
+        <div class="dr reveal">
+          <span class="dr-pct">76%</span>
+          <p class="dr-text"><strong>pesquisam online antes de ir à loja física.</strong> Mesmo quem compra presencialmente decide pelo Google primeiro. (HubSpot)</p>
+        </div>
+        <div class="dr reveal rd1">
+          <span class="dr-pct">58%</span>
+          <p class="dr-text"><strong>visitam o site da marca</strong> depois de ver o produto nas redes. Sem site, essa venda foi pro concorrente. (Meta)</p>
+        </div>
+        <div class="dr reveal rd2">
+          <span class="dr-pct">80%</span>
+          <p class="dr-text"><strong>finalizam a compra</strong> após ver anúncio de retargeting. E retargeting só funciona com site. (Opinion Box)</p>
+        </div>
+        <div class="dr reveal rd3">
+          <span class="dr-pct">65%</span>
+          <p class="dr-text"><strong>das buscas no Google</strong> não geram clique — a IA responde direto. Você precisa ser a fonte. (2025)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who-section">
+  <div class="who-header">
+    <h2 class="who-title reveal">
+      <span class="ghost">Seu</span><br>
+      <span class="fill">negócio</span><br>
+      <span class="ghost">tá aqui.</span>
+    </h2>
+    <p class="who-sub reveal rd1">Não importa o tamanho. Se você tem cliente pra conquistar, você precisa ser encontrado. Simples assim.</p>
+  </div>
+  <div class="who-grid">
+    <div class="wc reveal">
+      <div class="wc-icon">🧑‍💼</div>
+      <h3>MEIs e Autônomos</h3>
+      <p>Eletricista, personal, fotógrafo, designer — quem procura um profissional começa no Google.</p>
+      <span class="wc-tag">Aparece no Maps</span>
+    </div>
+    <div class="wc reveal rd1">
+      <div class="wc-icon">🏪</div>
+      <h3>Pequenas Empresas</h3>
+      <p>Restaurante, salão, pet shop, clínica — o cliente precisa te achar antes de ir até você.</p>
+      <span class="wc-tag">SEO local</span>
+    </div>
+    <div class="wc reveal rd2">
+      <div class="wc-icon">⚕️</div>
+      <h3>Profissionais Liberais</h3>
+      <p>Médico, advogado, dentista, psicólogo — credibilidade começa no site antes da consulta.</p>
+      <span class="wc-tag">Autoridade digital</span>
+    </div>
+    <div class="wc reveal rd3">
+      <div class="wc-icon">🛒</div>
+      <h3>E-commerces e Lojas</h3>
+      <p>Física ou virtual — o cliente pesquisa antes de comprar. Apareça quando ele tiver procurando.</p>
+      <span class="wc-tag">Vende 24h</span>
+    </div>
+  </div>
+</section>
+
+<!-- GEO/SEO -->
+<section class="geo-section" id="geo">
+  <div class="geo-inner">
+    <div>
+      <span class="geo-tag">Tecnologia que poucos têm</span>
+      <h2 class="geo-title reveal">SEU SITE APARECE<br>NO GOOGLE<br>E NO CHATGPT.</h2>
+      <p class="geo-body reveal rd1">
+        A gente constrói com <strong>SEO técnico desde a fundação</strong> — não como extra, como padrão. E aplica <strong>GEO (Generative Engine Optimization)</strong>: a tecnologia que faz sua empresa aparecer quando alguém pergunta ao ChatGPT ou Gemini quem resolve o problema do seu cliente.
+      </p>
+      <br>
+      <p class="geo-body reveal rd2"><strong>Seus concorrentes só pensam em Google. Seu site já vai estar pronto pro futuro das buscas.</strong></p>
+    </div>
+    <div class="geo-cards">
+      <div class="gc reveal">
+        <h4>🔍 SEO Técnico</h4>
+        <p>Código limpo, velocidade, mobile-first e estrutura que o Google adora. Ranqueia desde o dia 1.</p>
+      </div>
+      <div class="gc reveal rd1">
+        <h4>🤖 GEO — IA Ready</h4>
+        <p>Schema markup, FAQ estruturado e conteúdo que o ChatGPT cita. Você aparece onde os outros não estão ainda.</p>
+      </div>
+      <div class="gc reveal rd2">
+        <h4>📍 SEO Local</h4>
+        <p>Google Maps, "perto de mim" e buscas locais. Essencial pra quem tem endereço físico.</p>
+      </div>
+      <div class="gc reveal rd3">
+        <h4>📱 Mobile-First</h4>
+        <p>+75% das buscas vêm do celular. Seu site performa em qualquer tela — critério #1 do Google em 2025.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERABLES -->
+<section class="deliver-section">
+  <div class="deliver-header">
+    <span class="deliver-label reveal">O que você leva</span>
+    <h2 class="deliver-title reveal rd1">TUDO QUE<br>SEU NEGÓCIO<br>PRECISA.</h2>
+  </div>
+  <div class="deliver-grid">
+    <div class="di reveal">
+      <div class="di-num">01</div>
+      <div>
+        <h3>Site profissional e responsivo</h3>
+        <p>Design moderno, rápido e adaptado pra celular, tablet e computador. Primeira impressão que fecha venda.</p>
+      </div>
+    </div>
+    <div class="di reveal rd1">
+      <div class="di-num">02</div>
+      <div>
+        <h3>SEO configurado do zero</h3>
+        <p>Palavras-chave do seu nicho, meta tags, velocidade e estrutura que o Google valoriza.</p>
+      </div>
+    </div>
+    <div class="di reveal">
+      <div class="di-num">03</div>
+      <div>
+        <h3>GEO — Preparado pra IA</h3>
+        <p>Schema markup, FAQ estruturado e conteúdo que faz o ChatGPT te recomendar.</p>
+      </div>
+    </div>
+    <div class="di reveal rd1">
+      <div class="di-num">04</div>
+      <div>
+        <h3>WhatsApp integrado</h3>
+        <p>Botão direto que transforma visita em conversa — e conversa em cliente.</p>
+      </div>
+    </div>
+    <div class="di reveal">
+      <div class="di-num">05</div>
+      <div>
+        <h3>Google Meu Negócio</h3>
+        <p>Aparece no Maps, em buscas locais e em "perto de mim". Clientes te acham antes do concorrente.</p>
+      </div>
+    </div>
+    <div class="di reveal rd1">
+      <div class="di-num">06</div>
+      <div>
+        <h3>SSL + Domínio próprio</h3>
+        <p>Site seguro (https) com endereço profissional. Credibilidade antes mesmo de clicar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<section class="urgency-section">
+  <div class="urgency-inner">
+    <div class="urgency-badge reveal">⚠ Não ignora isso</div>
+    <h2 class="urgency-title reveal rd1">
+      CADA DIA SEM SITE<br>É UM DIA VENDENDO<br><span class="red">PRO CONCORRENTE.</span>
+    </h2>
+    <p class="urgency-body reveal rd2">
+      Não é papo. <strong>Agora mesmo</strong> alguém tá pesquisando o serviço que você oferece. Se você não aparece, quem aparece leva — e provavelmente leva pra sempre.
+    </p>
+    <div class="urgency-alert reveal rd3">
+      <p>
+        <strong>Dado real:</strong> empresas com presença digital crescem em média <strong>47% a mais</strong> que concorrentes sem site. Negócios locais com site bem configurado recebem até <strong>7x mais contatos</strong> via Google. (Google / Deloitte, 2024)
+      </p>
+    </div>
+    <a href="https://wa.me/5531918535222?text=Oi!%20Vi%20a%20página%20do%20Gênio%20do%20MKT%20e%20quero%20tirar%20meu%20negócio%20da%20invisibilidade%20digital." class="btn-main reveal" target="_blank" rel="noopener" style="display:inline-flex;margin:0 auto;">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Tirar meu negócio da invisibilidade
+    </a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq" itemscope itemtype="https://schema.org/FAQPage">
+  <span class="faq-label reveal">Dúvidas frequentes</span>
+  <h2 class="faq-title reveal rd1">PERGUNTAS<br>QUE TODO<br>MUNDO FAZ.</h2>
+  <div class="faq-list">
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" itemprop="name">Já tenho Instagram. Por que precisaria de site?<span class="tog">+</span></div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">Instagram é terreno alugado — algoritmo muda, conta cai, alcance some. Site é seu imóvel digital: ninguém tira de você. E o Google não ranqueia perfil de Instagram. Sem site você simplesmente não existe pra 97% dos clientes que pesquisam antes de comprar.</span>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" itemprop="name">Quanto tempo leva pra ficar pronto?<span class="tog">+</span></div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">Rápido. Dependendo do projeto, seu site pode estar no ar em poucos dias — já com SEO configurado, SSL ativo, mobile e WhatsApp integrado. Me chama no WhatsApp e te dou o prazo exato pro seu caso.</span>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" itemprop="name">Preciso entender de tecnologia?<span class="tog">+</span></div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">Zero. Você foca no seu negócio, a gente cuida de tudo — desenvolvimento, hospedagem, domínio, SEO, GEO e configurações técnicas. Entregamos funcionando e ainda te ensinamos o básico pra atualizar quando precisar.</span>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" itemprop="name">O que é GEO e por que isso importa?<span class="tog">+</span></div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">GEO (Generative Engine Optimization) é otimizar seu site pra aparecer nas respostas do ChatGPT, Gemini e Perplexity. São 800 milhões de usuários semanais no ChatGPT. Quem não aparece nessas respostas tá perdendo fatia grande de mercado — e a maioria dos concorrentes ainda nem sabe que isso existe.</span>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" itemprop="name">Vale a pena pra negócio pequeno ou MEI?<span class="tog">+</span></div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <span itemprop="text">Especialmente pra negócio pequeno. Grande empresa já tem time de marketing. Pra MEI ou pequena empresa, site bem feito é o grande equalizador — te coloca lado a lado com concorrentes maiores no Google. E o cliente não vê o tamanho da empresa, só quem aparece primeiro.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-title reveal">
+      CHEGA<br>DE SER<br><em>invisível.</em>
+    </h2>
+    <p class="cta-sub reveal rd1">
+      Seus clientes tão procurando o que você oferece agora mesmo.<br>
+      <strong>Eles tão te achando — ou tão achando o concorrente?</strong>
+    </p>
+    <a href="https://wa.me/5531918535222?text=Oi!%20Quero%20tirar%20meu%20negócio%20da%20invisibilidade%20digital%20com%20o%20Gênio%20do%20MKT." class="btn-main reveal rd2" target="_blank" rel="noopener" style="display:inline-flex;margin:0 auto;">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar agora no WhatsApp
+    </a>
+    <p class="cta-note reveal rd3">Resposta rápida · Sem enrolação · Proposta no WhatsApp</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">GÊNIO DO MKT</div>
+  <p>© 2025 GÊNIO DO MKT · SITES COM SEO E GEO PARA EMPRESAS BRASILEIRAS</p>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/5531918535222?text=Oi!%20Vi%20a%20página%20do%20Gênio%20do%20MKT%20e%20quero%20saber%20mais." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- MOBILE CTA -->
+<div class="mob-cta">
+  <div class="mob-cta-text">
+    <strong>Chega de ser invisível.</strong>
+    <p>Site com SEO e GEO · Entrega rápida</p>
+  </div>
+  <a href="https://wa.me/5531918535222?text=Oi!%20Quero%20meu%20site%20profissional." class="mob-cta-btn" target="_blank" rel="noopener">Falar agora →</a>
+</div>
+
+<script>
+const ro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.querySelector('.faq-q').addEventListener('click',()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
